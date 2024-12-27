@@ -11,6 +11,13 @@
     />
   </head>
   <body>
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+        Chatbot.init({
+            chatflowid: "4c5cc18b-5b34-486c-a136-129c9818f039",
+            apiHost: "http://localhost:3000",
+        })
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
